@@ -1,0 +1,6 @@
+.env
+spotifyApi_info/
+.log
+.pot
+.pyc
+__pycache__/

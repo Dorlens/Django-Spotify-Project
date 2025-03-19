@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    animation: changeBackground 3s infinite alternate;
+}
+
+@keyframes changeBackground {
+    0% {
+        background-color: #FF5733;
+    }
+    25% {
+        background-color: #33FF57;
+    }
+    50% {
+        background-color: #3357FF;
+    }
+    75% {
+        background-color: #FFFF33;
+    }
+    100% {
+        background-color: #FF33FF;
+    }
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+}
+

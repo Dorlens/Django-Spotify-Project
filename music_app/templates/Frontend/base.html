@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+    <title>Song Voter</title>
+
+
+    
+</head>
+<body>
+     
+    <div>  
+        <div> 
+            <h1 style="margin-top: -100px; display: flex; margin-left: 800px;">Listen and Vote</h1>
+            <hr style="display: flex; width: 500%; margin-right: 2000px;">
+        </div>
+           
+                    <div style="margin-top: 60px; display: flex; margin-left: 700px;">
+                        <iframe id="spotify-player" style="border-radius:12px"
+                                src="https://open.spotify.com/embed/track/{{ track_id }}"
+                                width="40%"
+                                height="352"
+                                frameborder="0"
+                                allowfullscreen=""
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                    </div>
+                        <div style="margin-top: 60px; display: flex; margin-left: 1040px;">
+                            <button onclick = "skipSong()" style="width: 80px; border: bottom width 50px;  font-size: 60px; background-color: green; ">👍</button>
+                        </div> 
+                 <button onclick= "ThumbUpSong()" style="width: 80px; height: 80px; display: flex; margin-top: -80px; margin-left: 790px;font-size: 60px; border: bottom width 50px; background-color: red;">👎</button>
+                 <h1 style="margin-left: 915px; margin-top: -58px;">OR</h1>
+
+
+                 <script src="{% static 'js/functionality.js' %}"></script>
+                </div>
+    </div> 
+
+</body>
+
+
+
+</html>
