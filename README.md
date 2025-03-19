@@ -23,9 +23,9 @@ A web application that generates a random music track from Spotify and allows us
     source env/bin/activate  # On macOS/Linux
     .\env\Scripts\activate   # On Windows
     ```
-3. . Clone the repository.
-    . Create a file named `spotifyApi_Info.py` inside the `spotify/music_app/` directory.
-    . Add your Spotify API credentials in the `spotifyApi_Info.py` file:
+3.  Clone the repository.
+     Create a file named `spotifyApi_Info.py` inside the `spotify/music_app/` directory.
+    Add your Spotify API credentials in the `spotifyApi_Info.py` file:
 
    ```python
    SPOTIFY_API_KEY = "your_spotify_api_key_here
