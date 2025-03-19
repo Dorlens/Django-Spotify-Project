@@ -23,30 +23,35 @@ A web application that generates a random music track from Spotify and allows us
     source env/bin/activate  # On macOS/Linux
     .\env\Scripts\activate   # On Windows
     ```
+3. 1. Clone the repository.
+    2. Create a file named `spotifyApi_Info.py` inside the `spotify/music_app/` directory.
+    3. Add your Spotify API credentials in the `spotifyApi_Info.py` file:
 
-3. Install the dependencies:
+   ```python
+   SPOTIFY_API_KEY = "your_spotify_api_key_here
+4. Install the dependencies:
     ```bash
     pip install -r requirements.txt
     ```
 
-4. Set up PostgreSQL database and configure your database in `settings.py`.
+5. Set up PostgreSQL database and configure your database in `settings.py`.
 
-5. Run migrations:
+6. Run migrations:
     ```bash
     python manage.py migrate
     ```
 
-6. Create a superuser for the admin panel:
+7. Create a superuser for the admin panel:
     ```bash
     python manage.py createsuperuser
     ```
 
-7. Start the development server:
+8. Start the development server:
     ```bash
     python manage.py runserver
     ```
 
-8. Open `http://127.0.0.1:8000` in your browser to use the app.
+9. Open `http://127.0.0.1:8000` in your browser to use the app.
 
 ## Usage
 
