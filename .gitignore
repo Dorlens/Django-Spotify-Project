@@ -1,5 +1,5 @@
 .env
-spotifyApi_info/
+spotify/music_app/spotifyApi_Info.py
 .log
 .pot
 .pyc
