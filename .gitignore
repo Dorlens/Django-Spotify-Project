@@ -1,4 +1,5 @@
 .env
+# Ignore the spotifyApi_Info.py file
 spotify/music_app/spotifyApi_Info.py
 .log
 .pot
